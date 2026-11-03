@@ -50,7 +50,8 @@ async function apiRequest(query, options = {}) {
     throw new Error(details || `Request failed with status ${response.status}.`);
   }
   if (response.status === 204) return null;
-  return response.json();
+  const responseText = await response.text();
+  return responseText ? JSON.parse(responseText) : null;
 }
 
 function makeButton(label, action, className = "button-secondary") {
