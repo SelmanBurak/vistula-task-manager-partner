@@ -40,7 +40,6 @@ async function apiRequest(query, options = {}) {
     ...options,
     headers: {
       apikey: config.supabasePublishableKey,
-      Authorization: `Bearer ${config.supabasePublishableKey}`,
       "Content-Type": "application/json",
       ...options.headers
     }
