@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="page-header">
+      <p class="eyebrow">Vistula Team Project</p>
+      <h1>Task Manager</h1>
+      <p>Organize tasks, track progress, and keep your changes saved.</p>
+      <p class="student-line">Student ID: <span id="student-id">73681</span></p>
+    </header>
+
+    <section class="panel" aria-labelledby="form-heading">
+      <h2 id="form-heading">Add a task</h2>
+      <form id="task-form">
+        <label for="task-title">Task title</label>
+        <input id="task-title" name="title" type="text" maxlength="200" required>
+
+        <label for="task-description">Description</label>
+        <textarea id="task-description" name="description" rows="3"></textarea>
+
+        <div class="form-actions">
+          <button id="task-submit" type="submit">Add task</button>
+          <button id="cancel-edit" class="button-secondary" type="button" hidden>Cancel edit</button>
+        </div>
+      </form>
+      <p id="status-message" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="task-section" aria-labelledby="tasks-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Your list</p>
+          <h2 id="tasks-heading">Tasks</h2>
+        </div>
+        <button id="refresh-tasks" class="button-secondary" type="button">Refresh</button>
+      </div>
+      <div id="task-list" aria-live="polite"></div>
+    </section>
+
+    <footer><a id="contribution-link" href="contribution.html">Team contribution</a></footer>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>
+
