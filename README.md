@@ -7,8 +7,8 @@ A basic Task Manager for the Vistula Team Project. The application uses HTML, CS
 - Student ID: `73681`
 - GitHub repository: `https://github.com/vistula-team-project-73681/vistula-task-manager`
 - Live application: `https://vistula-team-project-73681.github.io/vistula-task-manager/`
-- Incoming contribution Pull Request: to be added after it is merged
-- Outgoing contribution Pull Request: to be added after it is merged
+- Incoming contribution Pull Request from Selman (student ID `72922`): pending
+- Outgoing contribution Pull Request to Selman's repository: [#1](https://github.com/SelmanBurak/vistula-task-manager/pull/1) (awaiting review and merge)
 
 ## Supabase setup
 
