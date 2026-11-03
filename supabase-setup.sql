@@ -11,6 +11,10 @@ create table if not exists public.tasks (
 
 alter table public.tasks enable row level security;
 
+grant usage on schema public to anon, authenticated;
+grant select, insert, update, delete on table public.tasks to anon, authenticated;
+grant usage, select on sequence public.tasks_id_seq to anon, authenticated;
+
 drop policy if exists "Public can read tasks" on public.tasks;
 create policy "Public can read tasks"
     on public.tasks for select
